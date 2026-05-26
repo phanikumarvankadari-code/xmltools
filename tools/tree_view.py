@@ -95,7 +95,16 @@ class TreeViewTab(ttk.Frame):
         node_text = self.tree.item(node_id, "text")
 
         self.detail_text.delete("1.0", tk.END)
-        self.detail_text.insert("1.0", node_text)
+
+        # Parse node_text to extract tag and attributes
+        if " [" in node_text:
+            tag, attrs_str = node_text.split(" [", 1)
+            attrs_str = attrs_str.rstrip("]")
+            detail = f"Tag: {tag}\n\nAttributes:\n{attrs_str}"
+        else:
+            detail = f"Tag: {node_text}"
+
+        self.detail_text.insert("1.0", detail)
 
     def _expand_all(self) -> None:
         """Expand all nodes."""

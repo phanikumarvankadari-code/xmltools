@@ -71,9 +71,16 @@ class PrettyPrintTab(ttk.Frame):
 
     def _copy_output(self) -> None:
         """Copy output to clipboard."""
-        output = self.output_text.get("1.0", tk.END)
-        self.clipboard_clear()
-        self.clipboard_append(output)
+        output = self.output_text.get("1.0", tk.END).strip()
+        if not output:
+            return
+        try:
+            self.clipboard_clear()
+            self.clipboard_append(output)
+        except tk.TclError:
+            # Fallback: select all and rely on user to copy
+            self.output_text.tag_add(tk.SEL, "1.0", tk.END)
+            self.output_text.event_generate("<<Copy>>")
 
     def _save_output(self) -> None:
         """Save output to file."""

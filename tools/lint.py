@@ -1,8 +1,8 @@
 """Lint tab: XML well-formedness and schema validation."""
 
+import re
 import tkinter as tk
 import tkinter.ttk as ttk
-from typing import Callable
 
 from app import AppState, SharedActions
 from utils.subprocess_runner import run_xmllint
@@ -39,6 +39,7 @@ class LintTab(ttk.Frame):
 
         self.editor = tk.Text(editor_frame, height=15, width=80, wrap=tk.WORD)
         self.editor.pack(fill=tk.BOTH, expand=True)
+        self.editor.tag_config("error_line", background="#FFCCCC")
         paned.add(editor_frame, weight=2)
 
         # Error panel (bottom)
@@ -65,14 +66,26 @@ class LintTab(ttk.Frame):
         result = run_xmllint(["--noout"], xml_input=xml_text.encode("utf-8"))
 
         self.error_text.delete("1.0", tk.END)
+        self.editor.tag_delete("error_line")
 
         if result.success:
             self.error_text.insert("1.0", "✓ Well-formed (no errors)")
         else:
             error_msg = result.stderr or result.stdout
             self.error_text.insert("1.0", error_msg)
+            self._highlight_error_lines(error_msg)
+
+    def _highlight_error_lines(self, error_msg: str) -> None:
+        """Extract line numbers from error message and highlight them."""
+        # Try to extract line numbers from xmllint error output
+        # Format is typically: "filename:line:col: error message"
+        line_pattern = r"(?:line|:)(\d+):"
+        for match in re.finditer(line_pattern, error_msg):
+            line_num = int(match.group(1))
+            self.editor.tag_add("error_line", f"{line_num}.0", f"{line_num}.end")
 
     def _clear(self) -> None:
         """Clear both panes."""
         self.editor.delete("1.0", tk.END)
         self.error_text.delete("1.0", tk.END)
+        self.editor.tag_delete("error_line")
