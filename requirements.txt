@@ -1,1 +1,3 @@
+# Optional: Enhanced XPath 2.0 support
+# Install with: pip3 install -r requirements.txt
 lxml>=4.9.0
