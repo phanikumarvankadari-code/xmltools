@@ -29,6 +29,8 @@ class XSLTTransformTab(ttk.Frame):
 
         ttk.Button(toolbar, text="Load XSL", command=self._load_xsl).pack(side=tk.LEFT, padx=2)
         ttk.Button(toolbar, text="Transform", command=self.run_transform).pack(side=tk.LEFT, padx=2)
+        ttk.Button(toolbar, text="Copy Output", command=self._copy_output).pack(side=tk.LEFT, padx=2)
+        ttk.Button(toolbar, text="Save Output", command=self._save_output).pack(side=tk.LEFT, padx=2)
 
         self.xsl_label = ttk.Label(toolbar, text="No XSL loaded")
         self.xsl_label.pack(side=tk.LEFT, padx=10)
@@ -111,4 +113,20 @@ class XSLTTransformTab(ttk.Frame):
             self.output_text.insert("1.0", result.stdout)
         else:
             error_msg = result.stderr or result.stdout
-            self.output_text.insert("1.0", error_msg)
+            self.output_text.insert("1.0", f"Error: {error_msg}")
+
+    def _copy_output(self) -> None:
+        """Copy output to clipboard."""
+        output = self.output_text.get("1.0", tk.END).strip()
+        if not output:
+            return
+        try:
+            self.clipboard_clear()
+            self.clipboard_append(output)
+        except tk.TclError:
+            pass
+
+    def _save_output(self) -> None:
+        """Save output to file."""
+        output = self.output_text.get("1.0", tk.END)
+        self.actions.save_file(output, default_name="output.xml")

@@ -27,6 +27,8 @@ class XmlJsonTab(ttk.Frame):
 
         ttk.Button(toolbar, text="XML → JSON", command=self.xml_to_json).pack(side=tk.LEFT, padx=2)
         ttk.Button(toolbar, text="JSON → XML", command=self.json_to_xml).pack(side=tk.LEFT, padx=2)
+        ttk.Button(toolbar, text="Copy Left", command=self._copy_left).pack(side=tk.LEFT, padx=2)
+        ttk.Button(toolbar, text="Copy Right", command=self._copy_right).pack(side=tk.LEFT, padx=2)
 
         # Paned window: left | right
         paned = ttk.PanedWindow(self, orient=tk.HORIZONTAL)
@@ -136,3 +138,23 @@ class XmlJsonTab(ttk.Frame):
             elem.text = str(data)
 
         return elem
+
+    def _copy_left(self) -> None:
+        """Copy left pane (XML) to clipboard."""
+        content = self.left_text.get("1.0", tk.END).strip()
+        if content:
+            try:
+                self.clipboard_clear()
+                self.clipboard_append(content)
+            except tk.TclError:
+                pass
+
+    def _copy_right(self) -> None:
+        """Copy right pane (JSON) to clipboard."""
+        content = self.right_text.get("1.0", tk.END).strip()
+        if content:
+            try:
+                self.clipboard_clear()
+                self.clipboard_append(content)
+            except tk.TclError:
+                pass
