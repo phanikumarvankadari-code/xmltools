@@ -87,9 +87,18 @@ class XsdGenerateTab(ttk.Frame):
         """Analyze XML structure."""
         schema = ElementSchema(tag=root.tag, path=f"/{root.tag}")
 
+        # Count child occurrences
+        child_counts = {}
+        for child in root:
+            child_counts[child.tag] = child_counts.get(child.tag, 0) + 1
+
         for child in root:
             if child.tag not in schema.children:
-                schema.children[child.tag] = ElementSchema(tag=child.tag, path=f"{schema.path}/{child.tag}")
+                child_schema = ElementSchema(tag=child.tag, path=f"{schema.path}/{child.tag}")
+                # Set maxOccurs based on how many times this tag appears
+                if child_counts[child.tag] > 1:
+                    child_schema.max_occurs = 999  # Represents unbounded
+                schema.children[child.tag] = child_schema
             self._analyze_node(child, schema.children[child.tag], schema.path)
 
         if root.text and root.text.strip():
@@ -100,9 +109,18 @@ class XsdGenerateTab(ttk.Frame):
 
     def _analyze_node(self, elem: ET.Element, schema: ElementSchema, parent_path: str) -> None:
         """Recursively analyze a node."""
+        # Count child occurrences for cardinality
+        child_counts = {}
+        for child in elem:
+            child_counts[child.tag] = child_counts.get(child.tag, 0) + 1
+
         for child in elem:
             if child.tag not in schema.children:
-                schema.children[child.tag] = ElementSchema(tag=child.tag, path=f"{schema.path}/{child.tag}")
+                child_schema = ElementSchema(tag=child.tag, path=f"{schema.path}/{child.tag}")
+                # Set maxOccurs based on how many times this tag appears
+                if child_counts[child.tag] > 1:
+                    child_schema.max_occurs = 999  # Represents unbounded
+                schema.children[child.tag] = child_schema
             self._analyze_node(child, schema.children[child.tag], schema.path)
 
         if elem.text and elem.text.strip():
@@ -161,13 +179,18 @@ class XsdGenerateTab(ttk.Frame):
         ind = "  " * indent
         lines = []
 
+        # Build maxOccurs attribute if needed
+        max_occurs_attr = ""
+        if schema.max_occurs > 1:
+            max_occurs_attr = ' maxOccurs="unbounded"'
+
         if not schema.children and not schema.attributes:
             # Simple type
             elem_type = self._infer_type(schema.text_values)
-            lines.append(f'{ind}<xs:element name="{schema.tag}" type="{elem_type}"/>')
+            lines.append(f'{ind}<xs:element name="{schema.tag}" type="{elem_type}"{max_occurs_attr}/>')
         else:
             # Complex type
-            lines.append(f'{ind}<xs:element name="{schema.tag}">')
+            lines.append(f'{ind}<xs:element name="{schema.tag}"{max_occurs_attr}>')
             lines.append(f'{ind}  <xs:complexType>')
             lines.append(f'{ind}    <xs:sequence>')
 

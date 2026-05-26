@@ -27,6 +27,7 @@ class DiffCompareTab(ttk.Frame):
         ttk.Button(toolbar, text="Load File A", command=self._load_file_a).pack(side=tk.LEFT, padx=2)
         ttk.Button(toolbar, text="Load File B", command=self._load_file_b).pack(side=tk.LEFT, padx=2)
         ttk.Button(toolbar, text="Compare", command=self.run_diff).pack(side=tk.LEFT, padx=2)
+        ttk.Button(toolbar, text="Export Diff", command=self._export_diff).pack(side=tk.LEFT, padx=2)
 
         # Paned window: A | B
         paned = ttk.PanedWindow(self, orient=tk.HORIZONTAL)
@@ -141,3 +142,15 @@ class DiffCompareTab(ttk.Frame):
             else:  # equal
                 line_a += j - i
                 line_b += l - k
+
+    def _export_diff(self) -> None:
+        """Export comparison result."""
+        text_a = self.text_a.get("1.0", tk.END)
+        text_b = self.text_b.get("1.0", tk.END)
+
+        if not text_a.strip() or not text_b.strip():
+            return
+
+        # Create a diff report
+        report = f"=== File A ===\n{text_a}\n\n=== File B ===\n{text_b}"
+        self.actions.save_file(report, default_name="diff_report.txt", default_ext=".txt")
