@@ -72,6 +72,9 @@ class XPathQueryTab(ttk.Frame):
             values.append(query)
             self.query_entry["values"] = values
 
+        # Remove any existing highlight tags
+        self.editor.tag_delete("xpath_match")
+
         # Run xmllint with XPath
         result = run_xmllint(
             ["--xpath", query],
@@ -83,6 +86,26 @@ class XPathQueryTab(ttk.Frame):
         if result.success:
             output = result.stdout or "(empty result)"
             self.results_text.insert("1.0", output)
+            self._highlight_results(output)
         else:
             error = result.stderr or result.stdout
             self.results_text.insert("1.0", f"Error: {error}")
+
+    def _highlight_results(self, output: str) -> None:
+        """Highlight XPath result nodes in the editor."""
+        if not output or output.strip() == "(empty result)":
+            return
+
+        # Configure highlight tag
+        self.editor.tag_config("xpath_match", background="#FFFFAA", foreground="#000000")
+
+        # Try to find and highlight the result strings in the XML
+        lines = output.strip().split("\n")
+        for line in lines:
+            line = line.strip()
+            if line and "<" in line:
+                # It's XML output, try to find it in the editor
+                idx = self.editor.search(line, "1.0", tk.END, nocase=False)
+                if idx:
+                    end_idx = f"{idx}+{len(line)}c"
+                    self.editor.tag_add("xpath_match", idx, end_idx)

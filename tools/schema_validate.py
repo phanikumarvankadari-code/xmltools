@@ -1,5 +1,6 @@
 """Schema validation tab: XSD/DTD validation."""
 
+import re
 import tkinter as tk
 import tkinter.ttk as ttk
 from pathlib import Path
@@ -41,6 +42,7 @@ class SchemaValidateTab(ttk.Frame):
         editor_frame = ttk.Frame(paned)
         ttk.Label(editor_frame, text="XML:").pack(anchor=tk.W)
         self.editor = tk.Text(editor_frame, wrap=tk.WORD, height=12)
+        self.editor.tag_config("validation_error", background="#FFCCCC")
         self.editor.pack(fill=tk.BOTH, expand=True)
         paned.add(editor_frame, weight=2)
 
@@ -78,6 +80,9 @@ class SchemaValidateTab(ttk.Frame):
         if not xml_text.strip():
             return
 
+        # Clear previous error highlights
+        self.editor.tag_delete("validation_error")
+
         schema_ext = Path(self.schema_path).suffix.lower()
 
         if schema_ext == ".xsd":
@@ -103,3 +108,11 @@ class SchemaValidateTab(ttk.Frame):
         else:
             error_msg = result.stderr or result.stdout
             self.results_text.insert("1.0", error_msg)
+            self._highlight_error_lines(error_msg)
+
+    def _highlight_error_lines(self, error_msg: str) -> None:
+        """Extract line numbers from validation errors and highlight them."""
+        line_pattern = r"(?:line|:)(\d+):"
+        for match in re.finditer(line_pattern, error_msg):
+            line_num = int(match.group(1))
+            self.editor.tag_add("validation_error", f"{line_num}.0", f"{line_num}.end")
