@@ -77,19 +77,28 @@
       <!-- Tree Tab -->
       <div class="tab-content" id="tree-tab">
         <div class="toolbar">
+          <button class="btn-small" onclick="openTreeFile()">📂 Open File</button>
           <button class="btn-small" onclick="expandTree()">➕ Expand All</button>
           <button class="btn-small" onclick="collapseTree()">➖ Collapse All</button>
+          <span class="spacer"></span>
+          <span id="tree-hint" style="font-size: 0.85em; color: #666;">Right-click to edit • Drag files to load</span>
         </div>
         <div class="pane-horizontal">
           <div class="pane">
             <label>Structure:</label>
-            <div id="tree-view" class="tree-view"></div>
+            <div id="tree-view" class="tree-view" style="border: 2px dashed #ccc; min-height: 300px; padding: 10px;"></div>
           </div>
           <div class="pane">
-            <label>Details:</label>
-            <div id="tree-details" class="tree-details"></div>
+            <label>Details / Edit:</label>
+            <div id="tree-details" class="tree-details" style="overflow-y: auto;"></div>
           </div>
         </div>
+        <input type="file" id="tree-file" accept=".xml" style="display:none">
+      </div>
+
+      <!-- Context Menu (hidden by default) -->
+      <div id="context-menu" style="display:none; position:fixed; background:#fff; border:1px solid #ccc; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:10000;">
+        <div id="context-menu-items"></div>
       </div>
 
       <!-- XPath Tab -->

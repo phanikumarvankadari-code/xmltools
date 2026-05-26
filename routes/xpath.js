@@ -3,29 +3,30 @@
  */
 
 const express = require('express');
-const libxmljs = require('libxmljs');
+const { DOMParser } = require('xmldom');
+const xpath = require('xpath');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-  const { xml, xpath } = req.body;
+  const { xml, xpath: xpathExpr } = req.body;
 
-  if (!xml || !xpath) {
+  if (!xml || !xpathExpr) {
     return res.json({ error: 'Missing input', results: [] });
   }
 
   try {
-    const doc = libxmljs.parseXml(xml);
-    const results = doc.find(xpath);
+    const doc = new DOMParser().parseFromString(xml);
+    const results = xpath.select(xpathExpr, doc);
 
     const resultStrings = results.map(node => {
-      if (node.type() === 'text') {
-        return node.text();
-      } else if (node.type() === 'element') {
+      if (node.nodeType === 3) { // TEXT_NODE
+        return node.nodeValue;
+      } else if (node.nodeType === 1) { // ELEMENT_NODE
         return node.toString();
-      } else if (node.type() === 'attribute') {
-        return node.value();
+      } else if (node.nodeType === 2) { // ATTRIBUTE_NODE
+        return node.value;
       }
-      return node.toString();
+      return String(node);
     });
 
     return res.json({ results: resultStrings });

@@ -45,6 +45,7 @@ function switchTab(tabName) {
     if (tabName === 'schema') document.getElementById('schema-input').value = currentXml;
     if (tabName === 'xslt') document.getElementById('xslt-xml').value = currentXml;
     if (tabName === 'xml-json') document.getElementById('xml-input').value = currentXml;
+    if (tabName === 'tree') loadTree();
   }
 }
 
@@ -174,6 +175,58 @@ function saveFormatOutput() {
 }
 
 // ============ TREE ============
+let treeData = null;
+let selectedTreeNode = null;
+
+function openTreeFile() {
+  document.getElementById('tree-file').click();
+}
+
+document.getElementById('tree-file').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (file) {
+    const text = await file.text();
+    currentXml = text;
+    document.getElementById('xpath-input').value = text;
+    await loadTree();
+    setStatus(`Tree file loaded: ${file.name}`);
+  }
+});
+
+// Drag and drop
+const treeView = document.getElementById('tree-view');
+treeView.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  treeView.classList.add('drag-over');
+});
+
+treeView.addEventListener('dragleave', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  treeView.classList.remove('drag-over');
+});
+
+treeView.addEventListener('drop', async (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  treeView.classList.remove('drag-over');
+
+  const files = e.dataTransfer.files;
+  if (files.length > 0) {
+    const file = files[0];
+    if (file.type === 'text/xml' || file.name.endsWith('.xml')) {
+      const text = await file.text();
+      currentXml = text;
+      document.getElementById('xpath-input').value = text;
+      await loadTree();
+      setStatus(`✓ Dropped: ${file.name}`);
+    } else {
+      setStatus('❌ Only XML files allowed');
+    }
+  }
+});
+
 async function loadTree() {
   const xml = document.getElementById('xpath-input').value || currentXml;
   if (!xml) return;
@@ -185,33 +238,230 @@ async function loadTree() {
       body: JSON.stringify({ xml })
     });
     const result = await response.json();
+    treeData = result.tree;
 
     const treeView = document.getElementById('tree-view');
     treeView.innerHTML = buildTreeHtml(result.tree);
+    addTreeListeners();
     setStatus('✓ Tree loaded');
   } catch (err) {
     setStatus('❌ Error');
   }
 }
 
-function buildTreeHtml(node, depth = 0) {
+// Store node data for editing
+let nodeDataMap = {};
+
+function buildTreeHtml(node, depth = 0, path = '') {
   if (!node) return '';
-  const indent = '  '.repeat(depth);
+  const nodeId = `node-${depth}-${Math.random().toString(36).slice(2)}`;
+
+  // Store node data for later access
+  nodeDataMap[nodeId] = node;
+
   const attrs = node.attributes ? Object.entries(node.attributes).map(([k, v]) => `${k}="${v}"`).join(' ') : '';
   const attrStr = attrs ? ` ${attrs}` : '';
-  return `<div class="tree-item" style="margin-left: ${depth * 20}px"><strong>&lt;${node.tag}${attrStr}&gt;</strong></div>` +
-    (node.children || []).map(child => buildTreeHtml(child, depth + 1)).join('');
+  const hasChildren = node.children && node.children.length > 0;
+  const hasText = node.text && node.text.trim();
+  const toggleIcon = hasChildren ? '▼' : '';
+
+  let contentStr = '';
+  if (hasText) {
+    const displayText = node.text.trim().length > 50 ? node.text.trim().substring(0, 50) + '...' : node.text.trim();
+    contentStr = ` <span style="color: #666; margin-left: 5px;">"${displayText}"</span>`;
+  }
+
+  return `<div class="tree-item" id="${nodeId}" style="margin-left: ${depth * 20}px; cursor: pointer; padding: 2px 4px; border-radius: 3px;">
+    <span class="tree-toggle" style="display: ${hasChildren ? 'inline' : 'none'}; margin-right: 5px;">${toggleIcon}</span>
+    <strong onclick="selectTreeNode('${nodeId}', this)">&lt;${node.tag}${attrStr}&gt;</strong>${contentStr}
+    <span class="tree-children" style="display: block;">
+      ${(node.children || []).map((child, i) => buildTreeHtml(child, depth + 1, `${path}/${node.tag}[${i}]`)).join('')}
+    </span>
+  </div>`;
+}
+
+function addTreeListeners() {
+  document.querySelectorAll('.tree-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const children = toggle.parentElement.querySelector('.tree-children');
+      if (children) {
+        const isHidden = children.style.display === 'none';
+        children.style.display = isHidden ? 'block' : 'none';
+        toggle.textContent = isHidden ? '▼' : '▶';
+      }
+    });
+  });
+
+  document.querySelectorAll('.tree-item').forEach(item => {
+    item.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      showContextMenu(e, item);
+    });
+  });
+}
+
+function selectTreeNode(nodeId, element) {
+  document.querySelectorAll('.tree-item').forEach(el => el.style.backgroundColor = 'transparent');
+  element.parentElement.style.backgroundColor = '#e3f2fd';
+  selectedTreeNode = nodeId;
+
+  const nodeData = nodeDataMap[nodeId];
+  if (!nodeData) {
+    document.getElementById('tree-details').innerHTML = '<div style="padding: 10px; color: #999;">Node data not found</div>';
+    return;
+  }
+
+  const tag = nodeData.tag;
+  const attrsObj = nodeData.attributes || {};
+  const attrsStr = Object.entries(attrsObj).map(([k, v]) => `${k}="${v}"`).join('\n');
+  const textContent = nodeData.text || '';
+
+  const details = document.getElementById('tree-details');
+  details.innerHTML = `
+    <div style="padding: 10px;">
+      <h4>Edit Element: &lt;${tag}&gt;</h4>
+      <div style="margin: 10px 0;">
+        <label><strong>Tag Name:</strong></label>
+        <input type="text" id="edit-tag" value="${tag}" style="width: 100%; padding: 5px; margin: 5px 0;" />
+      </div>
+      <div style="margin: 10px 0;">
+        <label><strong>Attributes:</strong></label>
+        <textarea id="edit-attrs" style="width: 100%; height: 80px; padding: 5px; margin: 5px 0; font-family: monospace; font-size: 12px;" placeholder="key="value"&#10;key2="value2">${escapeHtml(attrsStr)}</textarea>
+      </div>
+      <div style="margin: 10px 0;">
+        <label><strong>Text Content:</strong></label>
+        <textarea id="edit-content" style="width: 100%; height: 80px; padding: 5px; margin: 5px 0;" placeholder="Enter text content...">${escapeHtml(textContent)}</textarea>
+      </div>
+      <button class="btn-small" onclick="applyNodeEdit()">✓ Apply Changes</button>
+      <button class="btn-small" onclick="deleteNode()">🗑️ Delete Node</button>
+      <button class="btn-small" onclick="addChildNode()">➕ Add Child</button>
+    </div>
+  `;
+}
+
+function showContextMenu(e, element) {
+  selectedTreeNode = element.id;
+  const menu = document.getElementById('context-menu');
+  const items = document.getElementById('context-menu-items');
+
+  const tag = element.querySelector('strong').textContent.match(/&lt;(\w+)/)[1];
+
+  items.innerHTML = `
+    <div style="padding: 8px; border-bottom: 1px solid #eee; cursor: pointer;" onclick="editNodeFromMenu(); closeContextMenu();">
+      ✏️ Edit "${tag}"
+    </div>
+    <div style="padding: 8px; border-bottom: 1px solid #eee; cursor: pointer;" onclick="addChildFromMenu(); closeContextMenu();">
+      ➕ Add Child Element
+    </div>
+    <div style="padding: 8px; cursor: pointer; color: #d32f2f;" onclick="deleteNode(); closeContextMenu();">
+      🗑️ Delete Node
+    </div>
+  `;
+
+  menu.style.display = 'block';
+  menu.style.left = e.clientX + 'px';
+  menu.style.top = e.clientY + 'px';
+}
+
+function closeContextMenu() {
+  document.getElementById('context-menu').style.display = 'none';
+}
+
+function editNodeFromMenu() {
+  const element = document.getElementById(selectedTreeNode);
+  if (element) {
+    element.querySelector('strong').click();
+  }
+}
+
+function addChildFromMenu() {
+  const tagName = prompt('Enter new tag name:', 'newElement');
+  if (tagName) {
+    const element = document.getElementById(selectedTreeNode);
+    if (element) {
+      const newHtml = buildTreeHtml({ tag: tagName, attributes: {}, children: [] }, 1);
+      const childrenDiv = element.querySelector('.tree-children');
+      if (childrenDiv) {
+        childrenDiv.innerHTML += newHtml;
+        addTreeListeners();
+        setStatus(`Added child: ${tagName}`);
+      }
+    }
+  }
+}
+
+function addChildNode() {
+  addChildFromMenu();
+}
+
+function applyNodeEdit() {
+  const newTag = document.getElementById('edit-tag').value.trim();
+  const attrsText = document.getElementById('edit-attrs').value.trim();
+  const content = document.getElementById('edit-content').value;
+
+  if (!newTag) {
+    setStatus('❌ Tag name required');
+    return;
+  }
+
+  const nodeData = nodeDataMap[selectedTreeNode];
+  if (!nodeData) {
+    setStatus('❌ Node not found');
+    return;
+  }
+
+  // Update node data
+  nodeData.tag = newTag;
+  nodeData.text = content;
+
+  // Parse attributes
+  const attrs = {};
+  if (attrsText) {
+    attrsText.split('\n').forEach(line => {
+      const match = line.match(/(\w+)="([^"]*)"/);
+      if (match) attrs[match[1]] = match[2];
+    });
+  }
+  nodeData.attributes = attrs;
+
+  // Update DOM display
+  const element = document.getElementById(selectedTreeNode);
+  if (element) {
+    const strong = element.querySelector('strong');
+    const attrStr = Object.entries(attrs).map(([k, v]) => `${k}="${v}"`).join(' ');
+    const contentStr = content && content.trim() ? ` <span style="color: #666; margin-left: 5px;">"${content.trim().length > 50 ? content.trim().substring(0, 50) + '...' : content.trim()}"</span>` : '';
+    strong.outerHTML = `<strong onclick="selectTreeNode('${selectedTreeNode}', this)">&lt;${newTag}${attrStr ? ' ' + attrStr : ''}&gt;</strong>${contentStr}`;
+    setStatus('✓ Node updated');
+  }
+}
+
+function deleteNode() {
+  if (confirm('Delete this node and all its children?')) {
+    const element = document.getElementById(selectedTreeNode);
+    if (element) {
+      element.remove();
+      document.getElementById('tree-details').innerHTML = '';
+      setStatus('✓ Node deleted');
+    }
+  }
 }
 
 function expandTree() {
-  document.querySelectorAll('.tree-item').forEach(el => el.style.display = 'block');
+  document.querySelectorAll('.tree-children').forEach(el => el.style.display = 'block');
+  document.querySelectorAll('.tree-toggle').forEach(el => el.textContent = '▼');
 }
 
 function collapseTree() {
-  document.querySelectorAll('.tree-item').forEach((el, i) => {
+  document.querySelectorAll('.tree-children').forEach((el, i) => {
     if (i > 0) el.style.display = 'none';
   });
+  document.querySelectorAll('.tree-toggle').forEach(el => el.textContent = '▶');
 }
+
+document.addEventListener('click', () => {
+  closeContextMenu();
+});
 
 // ============ XPATH ============
 async function runXPath() {
