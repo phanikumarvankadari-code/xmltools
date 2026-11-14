@@ -9,17 +9,24 @@
     "mcp": "node mcp-server.js",
     "start:integrated": "node integrated-server.js"
   },
-  "keywords": ["xml", "lint", "format", "xpath", "schema", "xslt"],
+  "keywords": [
+    "xml",
+    "lint",
+    "format",
+    "xpath",
+    "schema",
+    "xslt"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
+    "@modelcontextprotocol/sdk": "^0.7.0",
     "cors": "^2.8.5",
-    "xml2js": "^0.6.2",
-    "xpath": "^0.0.33",
-    "xmldom": "^0.6.0",
+    "express": "^4.18.2",
     "uuid": "^9.0.0",
-    "@modelcontextprotocol/sdk": "^0.7.0"
+    "xml2js": "^0.6.2",
+    "xmldom": "^0.6.0",
+    "xpath": "^0.0.33"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

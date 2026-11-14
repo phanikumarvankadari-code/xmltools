@@ -15,6 +15,10 @@ A modern web-based XML toolkit built with Node.js + Express + Vanilla JavaScript
 | **XML↔JSON** | Bidirectional conversion with standard conventions |
 | **Diff** | Visual comparison of two XML files |
 | **Gen XSD** | Auto-generate XSD schema from sample XML |
+| **Grid** | XMLSpy-style grid: repeating elements collapse into tables; Paths mode lists `xpath = value` rows |
+
+**Driving XMLTools from an AI agent?** See [AGENT_USAGE.md](AGENT_USAGE.md) — MCP tool
+reference (both transports) and Playwright selectors/pitfalls for the web UI.
 
 ## Prerequisites
 
@@ -113,11 +117,14 @@ npm run dev
 4. Error lines highlighted with details
 
 ### XSLT Tab
-1. Click **📂 Load XSL** and select an `.xsl` or `.xslt` file
-2. XML editor shows source
-3. XSL preview displayed
-4. Click **▶ Transform** to apply
-5. Output auto-formatted in right pane
+1. Click **📂 Load XML** to load the input payload (or paste it / use the global **📂 Open**)
+2. Click **📂 Load XSL** and select an `.xsl` or `.xslt` file
+3. Click **▶ Transform** to apply
+4. Output appears in the right pane; **📋 Copy** it or hit **🔲 View in Grid** to inspect it as nodes
+
+**Note**: the stylesheet's `match` patterns must fit the input document. If no template
+matches, XSLT's built-in default rules copy text with no markup — that looks like a broken
+transform but is correct behaviour for mismatched input.
 
 ### XML↔JSON Tab
 **XML → JSON**:
@@ -141,6 +148,22 @@ npm run dev
 3. Generated XSD appears in bottom pane
 4. Repeated elements get `maxOccurs="unbounded"`
 5. Click **💾 Save XSD** to export
+
+### Grid Tab
+Three ways to get XML in:
+- **📂 Load XML** — the grid's own file picker (does *not* overwrite the other tabs)
+- **📝 Paste XML** — opens a paste strip; paste, then **▶ Render**
+- **📥 From XSLT Output** — grids the last transform result
+- or the global **📂 Open**, which feeds every tab (and supersedes the grid's own source)
+
+1. Load XML by any of the above — switching to the tab renders it automatically
+2. Repeating sibling elements render as a **table**: one row per repetition, columns from
+   the union of their attributes and child element names
+3. Complex children show a **▶ expand** cell that opens a nested grid
+4. **➕ Expand All** / **➖ Collapse All** to control depth
+5. **📥 From XSLT Output** grids the last transform result without re-opening a file
+6. Switch to **Paths** for a flat `xpath = value` listing — paths are pasteable straight
+   into the XPath tab
 
 ## Keyboard Shortcuts
 
@@ -198,11 +221,12 @@ All endpoints accept POST requests with JSON bodies:
 - `POST /api/xml-json/to-xml` — Convert JSON to XML
 - `POST /api/diff` — Compare two XML documents
 - `POST /api/xsd-generate` — Generate XSD from sample
+- `POST /api/flatten` — Flatten XML into `path`/`value` rows
 
 ## Known Limitations
 
 1. **Schema Validation**: Basic support; remote schemas not supported
-2. **XSLT Transforms**: Currently returns placeholder output
+2. **XSLT Transforms**: Shells out to `xsltproc` (libxslt); requires it on PATH (bundled in the Docker image via `apk add libxslt`, install separately for local `npm start` on macOS/Linux)
 3. **XSD Generation**: Heuristic-based; intended as a starting point
 4. **Round-trip Conversion**: XML↔JSON is lossy (comments, PIs dropped)
 
@@ -278,7 +302,7 @@ MIT — see LICENSE file
 ## Contributing
 
 PRs welcome! Areas for enhancement:
-- Full XSLT transformation support
+- XSLT 2.0/3.0 support
 - Schema validation with remote URLs
 - Real-time collaboration
 - Dark mode
