@@ -11,8 +11,10 @@ const MCP_TOOLS = [
   { name: 'lint_xml',           description: 'Validate XML well-formedness and report errors with line numbers',      inputSchema: { type: 'object', properties: { xml: { type: 'string' } }, required: ['xml'] } },
   { name: 'format_xml',         description: 'Pretty-print and indent XML with consistent formatting',               inputSchema: { type: 'object', properties: { xml: { type: 'string' } }, required: ['xml'] } },
   { name: 'parse_xml_tree',     description: 'Parse XML and return its tree structure with elements and attributes',  inputSchema: { type: 'object', properties: { xml: { type: 'string' } }, required: ['xml'] } },
+  { name: 'flatten_xml',        description: 'Flatten XML into one "path = value" row per leaf element and attribute, using XPath paths', inputSchema: { type: 'object', properties: { xml: { type: 'string' } }, required: ['xml'] } },
   { name: 'xpath_query',        description: 'Execute an XPath expression against XML and return matching nodes',     inputSchema: { type: 'object', properties: { xml: { type: 'string' }, xpath: { type: 'string' } }, required: ['xml', 'xpath'] } },
   { name: 'validate_schema',    description: 'Validate XML against XSD schema',                                       inputSchema: { type: 'object', properties: { xml: { type: 'string' }, schema: { type: 'string' } }, required: ['xml', 'schema'] } },
+  { name: 'transform_xslt',     description: 'Apply an XSLT stylesheet to XML and return the transformed output',     inputSchema: { type: 'object', properties: { xml: { type: 'string' }, xsl: { type: 'string' } }, required: ['xml', 'xsl'] } },
   { name: 'convert_xml_to_json',description: 'Convert XML to JSON with attributes as @attr and text as #text',       inputSchema: { type: 'object', properties: { xml: { type: 'string' } }, required: ['xml'] } },
   { name: 'convert_json_to_xml',description: 'Convert JSON to XML (reverse of convert_xml_to_json)',                 inputSchema: { type: 'object', properties: { json: { type: 'string' } }, required: ['json'] } },
   { name: 'diff_xml',           description: 'Compare two XML documents and report additions, deletions, and changes',inputSchema: { type: 'object', properties: { xml_a: { type: 'string' }, xml_b: { type: 'string' } }, required: ['xml_a', 'xml_b'] } },
@@ -34,6 +36,12 @@ async function callTool(name, args) {
       const r = await tools.buildTree(args.xml);
       return r.error ? { content: [{ type: 'text', text: r.error }], isError: true } : { content: [{ type: 'text', text: JSON.stringify(r.tree, null, 2) }] };
     }
+    case 'flatten_xml': {
+      const r = await tools.flattenXml(args.xml);
+      if (r.error) return { content: [{ type: 'text', text: r.error }], isError: true };
+      const text = r.rows.length ? r.rows.map(row => `${row.path} = ${row.value}`).join('\n') : 'No nodes';
+      return { content: [{ type: 'text', text }] };
+    }
     case 'xpath_query': {
       const r = await tools.xpathQuery(args.xml, args.xpath);
       return r.error ? { content: [{ type: 'text', text: r.error }], isError: true } : { content: [{ type: 'text', text: r.results.length ? r.results.join('\n') : 'No results' }] };
@@ -41,6 +49,10 @@ async function callTool(name, args) {
     case 'validate_schema': {
       const r = await tools.validateSchema(args.xml, args.schema);
       return { content: [{ type: 'text', text: r.valid ? '✓ Valid' : r.errors.map(e => e.message).join('\n') }], isError: !r.valid };
+    }
+    case 'transform_xslt': {
+      const r = await tools.transformXslt(args.xml, args.xsl);
+      return r.error ? { content: [{ type: 'text', text: r.error }], isError: true } : { content: [{ type: 'text', text: r.output }] };
     }
     case 'convert_xml_to_json': {
       const r = await tools.xmlToJson(args.xml);

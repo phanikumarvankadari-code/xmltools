@@ -34,8 +34,10 @@ function switchTab(tabName) {
     tabContent.classList.add('active');
   }
 
-  // Mark button as active
-  event.target.classList.add('active');
+  // Mark button as active. Looked up by data-tab rather than the implicit global
+  // `event.target`, so switchTab() also works when called programmatically.
+  const tabBtn = document.querySelector(`.tab-btn[data-tab="${tabName}"]`);
+  if (tabBtn) tabBtn.classList.add('active');
 
   // Load XML in new tabs
   if (currentXml) {
@@ -46,6 +48,13 @@ function switchTab(tabName) {
     if (tabName === 'xslt') document.getElementById('xslt-xml').value = currentXml;
     if (tabName === 'xml-json') document.getElementById('xml-input').value = currentXml;
     if (tabName === 'tree') loadTree();
+  }
+
+  // Grid loads even with no currentXml, so it can render a pending XSLT output.
+  if (tabName === 'grid') {
+    const pending = gridPendingXml;
+    gridPendingXml = null;
+    loadGrid(pending || undefined);
   }
 }
 
@@ -71,6 +80,7 @@ document.getElementById('openBtn').addEventListener('click', () => {
       document.getElementById('schema-input').value = text;
       document.getElementById('xslt-xml').value = text;
       document.getElementById('xml-input').value = text;
+      gridSourceXml = ''; // a newly opened file supersedes the grid's own source
       setStatus(`Opened: ${file.name}`);
     }
   };
@@ -557,6 +567,31 @@ document.getElementById('xslt-file').addEventListener('change', async (e) => {
   }
 });
 
+// Load the input payload straight into the XSLT tab, without going via 📂 Open.
+function loadXsltXml() {
+  document.getElementById('xslt-xml-file').click();
+}
+
+document.getElementById('xslt-xml-file').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (file) {
+    const text = await file.text();
+    document.getElementById('xslt-xml').value = text;
+    currentXml = text;
+    setStatus(`XML loaded: ${file.name}`);
+  }
+});
+
+function viewXsltOutputInGrid() {
+  const out = document.getElementById('xslt-output').value.trim();
+  if (!out) {
+    setStatus('❌ No XSLT output — run Transform first');
+    return;
+  }
+  gridPendingXml = out;
+  switchTab('grid');
+}
+
 async function runTransform() {
   const xml = document.getElementById('xslt-xml').value.trim();
   const xsl = document.getElementById('xslt-xsl').value.trim();
@@ -760,6 +795,272 @@ function saveXSD() {
   a.download = 'generated.xsd';
   a.click();
   setStatus('💾 Saved');
+}
+
+// ============ GRID (XMLSpy-style) ============
+let gridData = null;
+let gridMode = 'grid';
+let gridPendingXml = null;
+// The document the grid is currently showing — set by file load, paste, or XSLT output.
+let gridSourceXml = '';
+// Bumped on every render request; a fetch that resolves after a newer request
+// started is discarded, so fast Grid/Paths toggling can't leave stale content.
+let gridRenderSeq = 0;
+
+// Depth up to which nested blocks start expanded. Keeps big documents responsive.
+const GRID_OPEN_DEPTH = 2;
+
+/**
+ * Source precedence: an explicit override (file / paste / XSLT output) wins and is
+ * remembered as the grid's source; with no override we re-render that remembered
+ * source, and only fall back to the globally-opened document if there isn't one.
+ * The global 📂 Open clears gridSourceXml, so a newly opened file takes over.
+ */
+async function loadGrid(xmlOverride) {
+  const xml = (xmlOverride || gridSourceXml || currentXml || '').trim();
+  if (!xml) {
+    document.getElementById('grid-view').innerHTML = '<div class="grid-empty">No XML loaded. Use 📂 Open, or 📥 From XSLT Output.</div>';
+    setStatus('❌ Empty input');
+    return;
+  }
+
+  gridSourceXml = xml;
+  const seq = ++gridRenderSeq;
+
+  if (gridMode === 'paths') return renderPaths(seq);
+
+  try {
+    const response = await fetch('/api/tree', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ xml })
+    });
+    const result = await response.json();
+    if (seq !== gridRenderSeq) return; // superseded by a newer render
+
+    if (result.error) {
+      document.getElementById('grid-view').innerHTML = `<div class="grid-empty">Error: ${escapeHtml(result.error)}</div>`;
+      setStatus('❌ Parse failed');
+      return;
+    }
+
+    gridData = result.tree;
+    document.getElementById('grid-view').innerHTML =
+      `<div class="grid-root"><div class="grid-root-tag">&lt;${escapeHtml(gridData.tag)}&gt;</div>${buildGridHtml(gridData, 0)}</div>`;
+    addGridListeners();
+    setStatus('✓ Grid loaded');
+  } catch (err) {
+    setStatus('❌ Error');
+  }
+}
+
+// Grid gets its own file picker so you can inspect a document without
+// pushing it into every other tab via the global 📂 Open.
+function loadGridXmlFile() {
+  document.getElementById('grid-xml-file').click();
+}
+
+document.getElementById('grid-xml-file').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const text = await file.text();
+  setStatus(`Loaded: ${file.name}`);
+  loadGrid(text);
+  e.target.value = ''; // let the same file be re-picked
+});
+
+function toggleGridPaste() {
+  const wrap = document.getElementById('grid-paste-wrap');
+  const showing = wrap.style.display !== 'none';
+  wrap.style.display = showing ? 'none' : 'block';
+  if (!showing) document.getElementById('grid-paste').focus();
+}
+
+function renderPastedXml() {
+  const text = document.getElementById('grid-paste').value.trim();
+  if (!text) {
+    setStatus('❌ Nothing pasted');
+    return;
+  }
+  loadGrid(text);
+}
+
+function clearGridPaste() {
+  document.getElementById('grid-paste').value = '';
+  document.getElementById('grid-paste').focus();
+}
+
+function gridFromXsltOutput() {
+  const out = document.getElementById('xslt-output').value.trim();
+  if (!out) {
+    setStatus('❌ No XSLT output — run Transform first');
+    return;
+  }
+  loadGrid(out);
+}
+
+function setGridMode(mode) {
+  gridMode = mode;
+  document.getElementById('grid-mode-grid').classList.toggle('active-mode', mode === 'grid');
+  document.getElementById('grid-mode-paths').classList.toggle('active-mode', mode === 'paths');
+  loadGrid(gridSourceXml);
+}
+
+async function renderPaths(seq) {
+  try {
+    const response = await fetch('/api/flatten', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ xml: gridSourceXml })
+    });
+    const result = await response.json();
+    if (seq !== undefined && seq !== gridRenderSeq) return; // superseded
+
+    if (result.error) {
+      document.getElementById('grid-view').innerHTML = `<div class="grid-empty">Error: ${escapeHtml(result.error)}</div>`;
+      setStatus('❌ Parse failed');
+      return;
+    }
+
+    document.getElementById('grid-view').innerHTML =
+      `<div class="grid-paths">${result.rows.map(r =>
+        `<div class="grid-path-row"><span class="grid-path">${escapeHtml(r.path)}</span><span class="grid-path-val">${escapeHtml(r.value)}</span></div>`
+      ).join('')}</div>`;
+    setStatus(`✓ ${result.rows.length} paths`);
+  } catch (err) {
+    setStatus('❌ Error');
+  }
+}
+
+// Group a node's children by tag, preserving first-appearance order.
+function groupChildren(children) {
+  const groups = [];
+  const index = {};
+  for (const child of children) {
+    if (index[child.tag] === undefined) {
+      index[child.tag] = groups.length;
+      groups.push({ tag: child.tag, items: [] });
+    }
+    groups[index[child.tag]].items.push(child);
+  }
+  return groups;
+}
+
+const isLeaf = node => !node.children || node.children.length === 0;
+const nodeText = node => (node.text != null ? String(node.text).trim() : '');
+
+function buildGridHtml(node, depth) {
+  const out = [];
+
+  const attrs = Object.entries(node.attributes || {});
+  if (attrs.length) {
+    out.push(`<div class="grid-attrs">${attrs.map(([k, v]) =>
+      `<span class="grid-attr"><span class="grid-attr-key">@${escapeHtml(k)}</span>${escapeHtml(String(v))}</span>`
+    ).join('')}</div>`);
+  }
+
+  const text = nodeText(node);
+  if (text && (node.children || []).length) {
+    out.push(`<div class="grid-row"><span class="grid-name">(text)</span><span class="grid-val">${escapeHtml(text)}</span></div>`);
+  }
+
+  for (const group of groupChildren(node.children || [])) {
+    out.push(group.items.length >= 2
+      ? buildRepeatTable(group, depth)
+      : buildSingleRow(group.items[0], depth));
+  }
+
+  return out.join('');
+}
+
+function buildSingleRow(child, depth) {
+  if (isLeaf(child)) {
+    return `<div class="grid-row"><span class="grid-name">${escapeHtml(child.tag)}</span><span class="grid-val">${escapeHtml(nodeText(child))}</span></div>`;
+  }
+
+  const open = depth + 1 < GRID_OPEN_DEPTH;
+  return `<div class="grid-block">
+    <div class="grid-block-head"><span class="grid-toggle">${open ? '▼' : '▶'}</span><span class="grid-name">${escapeHtml(child.tag)}</span></div>
+    <div class="grid-block-body" style="display: ${open ? 'block' : 'none'}">${buildGridHtml(child, depth + 1)}</div>
+  </div>`;
+}
+
+/**
+ * The XMLSpy move: repeating siblings become one table.
+ * Columns are the union of the repeats' attributes and child element names,
+ * in first-seen order; each repetition is a row.
+ */
+function buildRepeatTable(group, depth) {
+  const columns = [];
+  const seen = new Set();
+  for (const item of group.items) {
+    for (const name of Object.keys(item.attributes || {})) {
+      const col = `@${name}`;
+      if (!seen.has(col)) { seen.add(col); columns.push(col); }
+    }
+    for (const child of item.children || []) {
+      if (!seen.has(child.tag)) { seen.add(child.tag); columns.push(child.tag); }
+    }
+  }
+
+  // All repeats are simple text leaves — one value column is enough.
+  const valueOnly = columns.length === 0;
+  const cols = valueOnly ? ['value'] : columns;
+
+  const header = `<tr><th class="grid-idx">#</th>${cols.map(c => `<th>${escapeHtml(c)}</th>`).join('')}</tr>`;
+
+  const body = group.items.map((item, i) => {
+    const cells = cols.map(col => {
+      if (valueOnly) return `<td>${escapeHtml(nodeText(item))}</td>`;
+      if (col.startsWith('@')) {
+        const v = (item.attributes || {})[col.slice(1)];
+        return `<td>${v == null ? '' : escapeHtml(String(v))}</td>`;
+      }
+      const matches = (item.children || []).filter(c => c.tag === col);
+      if (matches.length === 0) return '<td class="grid-empty-cell"></td>';
+      if (matches.length === 1 && isLeaf(matches[0])) {
+        return `<td>${escapeHtml(nodeText(matches[0]))}</td>`;
+      }
+      // Complex or repeated grandchild: expandable nested grid inside the cell.
+      const label = matches.length > 1 ? `${matches.length} items` : 'expand';
+      const inner = matches.length > 1
+        ? buildRepeatTable({ tag: col, items: matches }, depth + 1)
+        : buildGridHtml(matches[0], depth + 1);
+      return `<td><div class="grid-block">
+        <div class="grid-block-head"><span class="grid-toggle">▶</span><span class="grid-nested-label">${label}</span></div>
+        <div class="grid-block-body" style="display: none">${inner}</div>
+      </div></td>`;
+    }).join('');
+    return `<tr><td class="grid-idx">${i + 1}</td>${cells}</tr>`;
+  }).join('');
+
+  return `<div class="grid-table-wrap">
+    <div class="grid-table-title">${escapeHtml(group.tag)} <span class="grid-count">· ${group.items.length} rows</span></div>
+    <table class="grid-table"><thead>${header}</thead><tbody>${body}</tbody></table>
+  </div>`;
+}
+
+function addGridListeners() {
+  document.querySelectorAll('#grid-view .grid-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const body = toggle.closest('.grid-block').querySelector('.grid-block-body');
+      if (!body) return;
+      const hidden = body.style.display === 'none';
+      body.style.display = hidden ? 'block' : 'none';
+      toggle.textContent = hidden ? '▼' : '▶';
+    });
+  });
+}
+
+function expandGrid() {
+  document.querySelectorAll('#grid-view .grid-block-body').forEach(el => el.style.display = 'block');
+  document.querySelectorAll('#grid-view .grid-toggle').forEach(el => el.textContent = '▼');
+}
+
+function collapseGrid() {
+  document.querySelectorAll('#grid-view .grid-block-body').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('#grid-view .grid-toggle').forEach(el => el.textContent = '▶');
 }
 
 // Utilities
