@@ -1,0 +1,3991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+    <cbc:ID>3110579091</cbc:ID>
+    <cbc:UUID>428164605</cbc:UUID>
+    <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+    <cbc:IssueTime>00:00:00</cbc:IssueTime>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:OrderReference>
+        <cbc:ID>4775209260</cbc:ID>
+        <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+        <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+    </cac:OrderReference>
+    <cac:DespatchDocumentReference>
+        <cbc:ID>91637791</cbc:ID>
+    </cac:DespatchDocumentReference>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>40003244865</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Anora Latvia SIA</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Malduguņu iela 4</cbc:StreetName>
+                <cbc:CityName>Mārupe, Mārupes nov.</cbc:CityName>
+                <cbc:PostalZone>2167</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>LV</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:CompanyID>LV40003244865</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>8001065</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>MAXIMA LATVIJA SIA</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Latgales iela 257,</cbc:StreetName>
+                <cbc:CityName>Rīga</cbc:CityName>
+                <cbc:PostalZone>LV-1019</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>LV</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:CompanyID>LV40003520643</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>1026478</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>MAXIMA LATVIJA SIA (R-844)</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Abras, Krustkalni, Ķekavas pag.</cbc:StreetName>
+                <cbc:CityName>Ķekavas novads</cbc:CityName>
+                <cbc:PostalZone>LV-2111</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>LV</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:CompanyID>LV40003520643</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:BuyerCustomerParty>
+    <cac:Delivery>
+        <cbc:ActualDeliveryDate>2026-07-01</cbc:ActualDeliveryDate>
+        <cac:DeliveryParty>
+            <cac:PartyIdentification>
+                <cbc:ID>1026478</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>MAXIMA LATVIJA SIA (R-844)</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Abras, Krustkalni, Ķekavas pag.</cbc:StreetName>
+                <cbc:CityName>Ķekavas novads</cbc:CityName>
+                <cbc:PostalZone>LV-2111</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>LV</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+        </cac:DeliveryParty>
+    </cac:Delivery>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode/>
+
+        <cbc:PaymentDueDate>2026-08-26</cbc:PaymentDueDate>
+        <cbc:InstructionID>3110579091</cbc:InstructionID>
+        <cbc:PaymentID>3110579091</cbc:PaymentID>
+    </cac:PaymentMeans>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">2053.64</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">9779.26</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">2053.64</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21.00</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">8.40</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>0.00</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">9787.66</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">9787.66</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">11841.30</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="EUR">11841.30</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">40</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">258.00</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>10</cbc:LineID>
+            <cbc:SalesOrderLineID>10</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>1</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">54.18</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">54.18</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.355</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>CORNIJ AIST (BAZE) 40% 50CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4751006830103</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1004511</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4751006830103</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L04</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260604</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">6.45</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">93.12</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>20</cbc:LineID>
+            <cbc:SalesOrderLineID>20</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>2</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">19.56</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">19.56</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.815</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI CALIFORNIA RED 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000001882</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1004431</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000001882</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260527</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.88</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">93.12</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>30</cbc:LineID>
+            <cbc:SalesOrderLineID>30</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>3</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">19.56</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">19.56</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.815</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI CALIFORNIA WHITE 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000001868</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1004428</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000001868</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260603_1</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.88</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>4</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">124.26</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>40</cbc:LineID>
+            <cbc:SalesOrderLineID>40</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>4</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">26.09</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">26.09</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">4.348</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>LARSEN VSOP ANNIVERSARY 40% 70CL GB 2026</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3272513020708</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1043672</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3272510001618</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L03</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260625</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">20.71</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>5</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">58.32</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>50</cbc:LineID>
+            <cbc:SalesOrderLineID>50</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>5</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">12.25</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">12.25</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.021</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>GFV GALLO WHITE ZINF 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000007839</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1004534</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000007839</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260601</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">4.86</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>6</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">48</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">274.56</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>60</cbc:LineID>
+            <cbc:SalesOrderLineID>60</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>6</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">57.66</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">57.66</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.201</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH 40% 50CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750129090111</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026802</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750129090111</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260619</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.72</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>7</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">110.64</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>70</cbc:LineID>
+            <cbc:SalesOrderLineID>70</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>7</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">23.23</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">23.23</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.936</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>CANADIAN GUARD HOUSE 40% 70CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3014400017893</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1001459</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3014400017893</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L02</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260619_1</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">9.22</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>8</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">17.24</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>80</cbc:LineID>
+            <cbc:SalesOrderLineID>80</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>8</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">3.62</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">3.62</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">3.620</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>LARSEN VS 40% 70CL NEW</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3272510001519</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1043665</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3272510001519</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L03</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260609</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">17.24</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>9</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">48</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">226.08</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>90</cbc:LineID>
+            <cbc:SalesOrderLineID>90</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>9</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">47.48</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">47.48</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.989</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>CASAL GARCIA BRANCO 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>5601096208308</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1020009</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>5601096208308</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260610</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">4.71</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>10</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">135.60</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>100</cbc:LineID>
+            <cbc:SalesOrderLineID>100</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>10</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">28.48</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">28.48</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.187</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH CRANBERRY 40% 50CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750129441869</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026809</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750129441869</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260525,20260528</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.65</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>11</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">67.80</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>110</cbc:LineID>
+            <cbc:SalesOrderLineID>110</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>11</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">14.24</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">14.24</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.187</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH SANDTHORN 40% 50CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750129442279</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026862</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750129442279</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260527</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.65</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>12</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">18</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">239.94</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>120</cbc:LineID>
+            <cbc:SalesOrderLineID>120</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>12</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">50.39</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">50.39</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">2.799</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARMAGNAC DE LA MAZIERE 40% 70CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3147690045908</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1004517</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3147690045908</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L05</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260527</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">13.33</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>13</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">36</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">325.08</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>130</cbc:LineID>
+            <cbc:SalesOrderLineID>130</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>13</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">68.27</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">68.27</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.896</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKENKORVA VODKA 40% 12X70CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>6412700148007</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1021562</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412700148007</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260625</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">9.03</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>14</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">135.60</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>140</cbc:LineID>
+            <cbc:SalesOrderLineID>140</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>14</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">28.48</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">28.48</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.187</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH BLACK CURRANT 40% 50CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750129442439</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026808</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750129442439</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260603</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.65</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>15</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">144</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">1627.20</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>150</cbc:LineID>
+            <cbc:SalesOrderLineID>150</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>15</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">341.66</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">341.66</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">2.373</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKENKORVA VODKA 40% 1L C12</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>6412700140001</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1021563</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412700140001</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260622_1</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">11.30</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>16</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">36</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">203.40</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>160</cbc:LineID>
+            <cbc:SalesOrderLineID>160</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>16</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">42.71</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">42.71</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.186</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH APPLE 40% 50CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750129443139</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026806</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750129443139</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260605</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.65</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>17</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">18</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">87.48</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>170</cbc:LineID>
+            <cbc:SalesOrderLineID>170</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>17</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">18.37</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">18.37</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.021</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>GFV GALLO PINOT GRIGIO 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000016626</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1014381</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000016626</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260413</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">4.86</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>18</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">96</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">372.48</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>180</cbc:LineID>
+            <cbc:SalesOrderLineID>180</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>18</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">78.22</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">78.22</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.815</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI SWEET RED 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000019849</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1015347</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000019849</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260619</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.88</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>19</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">153.12</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>190</cbc:LineID>
+            <cbc:SalesOrderLineID>190</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>19</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">32.16</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">32.16</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.340</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKENKORVA MINTTU 35% 50CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>6412700311203</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1021546</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412700311203</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L28</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260619</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">6.38</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>20</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">324</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">797.04</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>200</cbc:LineID>
+            <cbc:SalesOrderLineID>200</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>20</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">167.38</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">167.38</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.517</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH 40% 20CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750129441166</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026800</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750129441166</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260619</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">2.46</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>21</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">48</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">114.24</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>210</cbc:LineID>
+            <cbc:SalesOrderLineID>210</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>21</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">23.99</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">23.99</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.500</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH CRANBERRY 40% 20CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750129442316</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026861</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750129442316</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260619</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">2.38</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>22</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">57.12</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>220</cbc:LineID>
+            <cbc:SalesOrderLineID>220</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>22</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">12.00</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">12.00</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.500</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH SANDTHORN 40% 20CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750129442835</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026813</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750129442835</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260424,20260610</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">2.38</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>23</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">72</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">279.36</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>240</cbc:LineID>
+            <cbc:SalesOrderLineID>240</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>23</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">58.67</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">58.67</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.815</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI SWEET WHITE MOSCATO 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000022511</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1020617</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000022511</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260617</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.88</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>24</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">131.04</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>250</cbc:LineID>
+            <cbc:SalesOrderLineID>250</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>24</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">27.52</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">27.52</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.147</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>VECHIRNJA CHARKA BIRCH 40% 50CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750761002091</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1020694</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750761002091</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260611</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.46</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>25</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">53.76</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>260</cbc:LineID>
+            <cbc:SalesOrderLineID>260</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>25</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">11.29</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">11.29</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.882</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKENKORVA BLUEB JUNIPER 37,5% 70CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>6412700511702</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1021578</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412700511702</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L51</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260616</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">8.96</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>26</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">53.76</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>270</cbc:LineID>
+            <cbc:SalesOrderLineID>270</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>26</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">11.29</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">11.29</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.882</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKENKORVA LEM.LIME YARROW 37,5% 70CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>6412700512709</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1021582</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412700512709</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L51</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260413</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">8.96</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>27</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">99.72</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>280</cbc:LineID>
+            <cbc:SalesOrderLineID>280</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>27</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">20.94</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">20.94</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.745</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>BLASON ROUGE AOC CREMANT DE LIMOUX 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3062670306490</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1021824</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3062670306490</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L11</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260608</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">8.31</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>28</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">43.02</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>290</cbc:LineID>
+            <cbc:SalesOrderLineID>290</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>28</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">9.03</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">9.03</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.505</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>PASQUA R&amp;J PASSIONESEN PROSEC BRUT 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>8007880126006</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1020618</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>8007880125108</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L11</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260610</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">7.17</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>29</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">135.60</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>310</cbc:LineID>
+            <cbc:SalesOrderLineID>310</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>29</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">28.48</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">28.48</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.187</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ARSENITCH CHERRY 40% 50CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750761002428</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1026812</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750761002428</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260305</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.65</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>30</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">36.96</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>320</cbc:LineID>
+            <cbc:SalesOrderLineID>320</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>30</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">7.76</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">7.76</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.293</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>19 CRIMES CABERNET SAUVIGNON 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>9311220005517</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1028309</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>9311220005517</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260429</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">6.16</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>31</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">36.96</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>330</cbc:LineID>
+            <cbc:SalesOrderLineID>330</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>31</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">7.76</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">7.76</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.293</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>19 CRIMES CHARDONNAY 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>9311220005685</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1024906</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>9311220005685</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260521</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">6.16</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>32</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">36.96</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>340</cbc:LineID>
+            <cbc:SalesOrderLineID>340</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>32</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">7.76</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">7.76</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.293</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>19 CRIMES RED WINE 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>9311220004343</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1023776</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>9311220004343</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20250926</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">6.16</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>33</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">180.24</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>350</cbc:LineID>
+            <cbc:SalesOrderLineID>350</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>33</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">37.85</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">37.85</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.577</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>VECHIRNJA CHARKA MILK 40% 70CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750761002299</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1021814</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750761002299</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260619</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">7.51</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>34</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">48</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">151.20</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>360</cbc:LineID>
+            <cbc:SalesOrderLineID>360</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>34</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">31.75</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">31.75</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.661</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>BEEHIVE NAP.RES.VSOP 40% 20CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3012993048874</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1004419</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3012993048874</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L04</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260611</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.15</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>35</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">113.28</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>370</cbc:LineID>
+            <cbc:SalesOrderLineID>370</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>35</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">23.79</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">23.79</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.982</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>BEEHIVE NAP.RES.VSOP 40% 70CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3012993048911</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1012912</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3012993048911</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L04</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260605</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">9.44</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>36</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">54</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">194.94</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>380</cbc:LineID>
+            <cbc:SalesOrderLineID>380</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>36</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">40.94</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">40.94</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.758</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>CRAFTED COLLECTION RIESLING 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4069600018477</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1027357</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4069600018477</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260617_1,20260619</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.61</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>37</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">50.16</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>390</cbc:LineID>
+            <cbc:SalesOrderLineID>390</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>37</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">10.53</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">10.53</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.755</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>SAAREMAA GIN 37,5% 70CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4740054361783</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1024787</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4740054361783</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L36</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260617</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">8.36</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>38</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">33.12</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>400</cbc:LineID>
+            <cbc:SalesOrderLineID>400</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>38</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">6.96</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">6.96</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.580</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>MEDUS BALZAMS 32% 20CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750761001766</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1018153</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750761001766</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L28</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260609</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">2.76</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>39</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">36</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">156.60</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>410</cbc:LineID>
+            <cbc:SalesOrderLineID>410</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>39</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">32.89</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">32.89</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.914</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKENKORVA MOJITO 15% 12X50CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>6412700088228</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1034521</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412700088228</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L28</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260619</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">4.35</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>40</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">36</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">3.60</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>410</cbc:LineID>
+            <cbc:SalesOrderLineID>410</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>39</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.00</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>0.00</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>PANT</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>PANT0.10</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.10</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>40</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">30</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">150.30</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>420</cbc:LineID>
+            <cbc:SalesOrderLineID>430</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>40</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">31.56</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">31.56</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.052</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ROCHE MAZET CHARDONNAY BLANC BRUT 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3175529650542</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1032298</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3175529650542</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L11</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260603_1</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.01</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>41</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">36.96</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>430</cbc:LineID>
+            <cbc:SalesOrderLineID>440</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>41</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">7.76</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">7.76</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.293</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>19 CRIMES SAUV BLOCK 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>9311220006057</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1028232</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>9311220006057</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20251205</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">6.16</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>42</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">86.64</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>440</cbc:LineID>
+            <cbc:SalesOrderLineID>450</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>42</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">18.19</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">18.19</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.758</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>CRAFTED COLLECTION RIESLING GEWÜRZ. 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4069600018491</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1027359</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4069600018491</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260617</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.61</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>43</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">30</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">114.60</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>450</cbc:LineID>
+            <cbc:SalesOrderLineID>460</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>43</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">24.07</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">24.07</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.802</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ROCHE MAZET CAB.SAUV. PAYS D'OC 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3175520018716</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1027594</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3175520018716</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260629</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.82</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>44</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">91.68</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>460</cbc:LineID>
+            <cbc:SalesOrderLineID>470</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>44</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">19.25</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">19.25</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.802</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>ROCHE MAZET CHARDONNAY PAYS D'OC 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3175520018624</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1027592</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3175520018624</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260629</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.82</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>45</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">36</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">142.20</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>470</cbc:LineID>
+            <cbc:SalesOrderLineID>480</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>45</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">29.86</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">29.86</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.829</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI REFRESH PEACH 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000024683</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1023955</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000024683</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L22</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260616</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.95</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>46</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">94.80</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>480</cbc:LineID>
+            <cbc:SalesOrderLineID>490</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>46</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">19.91</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">19.91</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.830</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI REFRESH STRAWBERRY 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000024676</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1023956</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000024676</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L22</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260616</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.95</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>47</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">66</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">463.98</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>490</cbc:LineID>
+            <cbc:SalesOrderLineID>500</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>47</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">97.44</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">97.44</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.476</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>CRAFTED COLLECTION RIESLING 1,5L POUCH</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4069600018750</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1034761</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4069600018750</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260617_2</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">7.03</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>48</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">86.64</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>500</cbc:LineID>
+            <cbc:SalesOrderLineID>510</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>48</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">18.19</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">18.19</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.758</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>CRAFTED COLLECTION PINOT GRIGIO 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4069600019054</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1037715</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4069600019054</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260611</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.61</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>49</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">95.04</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>510</cbc:LineID>
+            <cbc:SalesOrderLineID>520</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>49</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">19.96</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">19.96</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.832</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI REFRESH TROPICAL MOSCATO 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000033067</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1041337</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000033067</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L22</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260622</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.96</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>50</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">64.20</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>520</cbc:LineID>
+            <cbc:SalesOrderLineID>530</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>50</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">13.48</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">13.48</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.123</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKENKORVA CREME CARAMEL CREAM 15% 50CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>6412700344201</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1036110</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412700344201</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L28</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260513</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.35</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>51</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">32.10</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>530</cbc:LineID>
+            <cbc:SalesOrderLineID>540</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>51</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">6.74</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">6.74</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.123</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKENKORVA STRAWBERRY ICECRE 15% 6X50CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>6412700382203</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1043256</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412700382203</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L28</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260616</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.35</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>52</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">90.12</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>540</cbc:LineID>
+            <cbc:SalesOrderLineID>550</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>52</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">18.93</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">18.93</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.577</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>VECHIRNJA CHARKA BIRCH 40% 70CL LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750761002107</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1020696</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750761002107</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L01</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260609</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">7.51</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>53</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">23.52</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>560</cbc:LineID>
+            <cbc:SalesOrderLineID>580</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>54</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">4.94</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">4.94</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.206</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKEN LD VODKA GING.ALE 5% 33CL CAN LV</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750761003432</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1044268</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>6412703016020</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L43</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20270506</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.98</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>54</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">2.40</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>560</cbc:LineID>
+            <cbc:SalesOrderLineID>580</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>54</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.00</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>0.00</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>PANT</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>PANT0.10</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.10</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>54</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">72</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">266.40</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>580</cbc:LineID>
+            <cbc:SalesOrderLineID>620</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>55</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">55.94</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">55.94</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.777</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>GUSTAV RIESLING TROCKEN RHEINHESSEN 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4006975176289</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1043158</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4006975176289</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260611</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.70</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>55</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">12</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">48.00</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>590</cbc:LineID>
+            <cbc:SalesOrderLineID>630</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>56</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">10.08</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">10.08</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.840</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>IL CAPOLAVORO LEGG. APP. BIANCO 6X75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>5704634186486</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1038109</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>5704634186486</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260520</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">4.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>56</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">23.52</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>620</cbc:LineID>
+            <cbc:SalesOrderLineID>680</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>57</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">4.94</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">4.94</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.206</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>KOSKEN SPRITZ ELDER HUGO 4,5% 33CL C12</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>4750761003371</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1044186</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>4750761003371</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L43</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20270505</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.98</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>57</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">2.40</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>620</cbc:LineID>
+            <cbc:SalesOrderLineID>680</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>57</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.00</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>0.00</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>PANT</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>PANT0.10</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.10</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>57</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">66.00</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>630</cbc:LineID>
+            <cbc:SalesOrderLineID>700</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>58</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">13.86</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">13.86</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">2.310</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>BLASON ROUGE CREMANT BLACK EDITION 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>3062670366067</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1040398</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>3062670366067</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L11</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260629</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">11.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>58</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">20</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">188.00</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>640</cbc:LineID>
+            <cbc:SalesOrderLineID>710</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>59</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">39.48</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">39.48</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.974</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>Il Capolavoro Leg. App. /4x2,25L</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>5704634171338</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1038644</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>5704634171338</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260603</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">9.40</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>59</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">93.12</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>650</cbc:LineID>
+            <cbc:SalesOrderLineID>720</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>60</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">19.56</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">19.56</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.815</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI BOTANICALS LAVENDER &amp; LIME 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000038666</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1043930</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000038666</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L22</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260605</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.88</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>60</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">24</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">93.12</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>660</cbc:LineID>
+            <cbc:SalesOrderLineID>730</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>61</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">19.56</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">19.56</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.815</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>C.ROSSI BOTANICALS ELDERFLOWER&amp;ROSE 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>85000038659</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1043931</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>85000038659</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L22</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260603</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">3.88</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>61</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">39.60</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>670</cbc:LineID>
+            <cbc:SalesOrderLineID>740</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>62</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">8.32</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">8.32</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.387</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>CORTE CALLI VALDOBBIADENE EXTRA DRY 75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>8010719708106</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1018677</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>8010719708106</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L11</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260622,20260617_1</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">6.60</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>62</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">6</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">30.60</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID>680</cbc:LineID>
+            <cbc:SalesOrderLineID>750</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>63</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">6.43</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">6.43</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">1.072</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>IL CAPOLAVORO PRIM.DI MANDURIA 6X75CL</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>5704634187377</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>1040629</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>5704634187377</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID>L14</cbc:ID>
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>20260603</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">5.10</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>63</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="">0</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">0.00</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID/>
+
+            <cbc:SalesOrderLineID>760</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>64</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.00</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>PALLET 1200X800 EUR</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID/>
+
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>2001098</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>7350000000269</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID/>
+
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID/>
+
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>64</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="PCE">14</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">0.00</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cbc:LineID/>
+
+            <cbc:SalesOrderLineID>770</cbc:SalesOrderLineID>
+            <cac:OrderReference>
+                <cbc:ID>4775209260</cbc:ID>
+                <cbc:SalesOrderID>17429797</cbc:SalesOrderID>
+                <cbc:IssueDate>2026-06-30</cbc:IssueDate>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cbc:LineID>65</cbc:LineID>
+            <cac:DocumentReference>
+                <cbc:ID>91637791</cbc:ID>
+                <cbc:IssueDate>2026-07-01</cbc:IssueDate>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+            <cac:TaxSubtotal>
+                <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+                <cbc:PerUnitAmount currencyID="EUR">0.000</cbc:PerUnitAmount>
+                <cac:TaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>21.000</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:TaxSubtotal>
+        </cac:TaxTotal>
+        <cac:Item>
+            <cbc:Name>RPG PALLET 1200X800 EUR</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID/>
+
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>2022198</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID/>
+
+            </cac:StandardItemIdentification>
+            <cac:CatalogueItemIdentification>
+                <cbc:ID/>
+
+            </cac:CatalogueItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID/>
+
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>

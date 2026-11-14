@@ -32,3 +32,8 @@ htmlcov/
 *.pyc
 .env
 .env.local
+
+# Node / tooling
+node_modules/
+.playwright-mcp/
+.claude/
